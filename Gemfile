@@ -8,6 +8,10 @@ gem 'rails', '3.2.13'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'spork'
 end
 
 # Gems used only for assets and not required
@@ -24,8 +28,14 @@ end
 
 gem 'jquery-rails'
 
+require 'rbconfig'
+gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
+
 group :test do
   gem 'capybara'
+  gem 'rb-fchange'
+  gem 'rb-notifu'
+  gem 'win32console'
 end
 
 group :production do
