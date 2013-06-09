@@ -98,6 +98,10 @@ GEM
     nokogiri (1.5.9)
     nokogiri (1.5.9-x86-mingw32)
     pg (0.15.1-x86-mingw32)
+    polish (0.1.6)
+      bundler
+      i18n
+      rake
     polyglot (0.3.3)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -123,6 +127,8 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails-i18n (0.7.3)
+      i18n (~> 0.5)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -200,7 +206,9 @@ DEPENDENCIES
   guard-spork
   jquery-rails
   pg
+  polish (>= 0.1.0)
   rails (= 3.2.13)
+  rails-i18n
   rb-fchange
   rb-notifu
   rspec-rails
